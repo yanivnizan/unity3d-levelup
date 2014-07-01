@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UnityAndroidStore.iml" filepath="$PROJECT_DIR$/UnityAndroidStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UnityAndroidLevelUp.iml" filepath="$PROJECT_DIR$/UnityAndroidLevelUp.iml" />
     </modules>
   </component>
 </project>

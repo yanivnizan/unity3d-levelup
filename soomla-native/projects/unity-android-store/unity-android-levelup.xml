@@ -2,7 +2,7 @@
 <project name="soomla" default="all">
   
   <property environment="env" />
-  <property file="unity-android-store.properties"/>
+  <property file="unity-android-levelup.properties"/>
   
   <!-- Compiler options -->
   
@@ -71,36 +71,36 @@
   
   <!-- Modules -->
   
-  <import file="${basedir}/module_unityandroidstore.xml"/>
+  <import file="${basedir}/module_unityandroidlevelup.xml"/>
   
   <target name="init" description="Build initialization">
     <!-- Perform any build initialization in this target -->
   </target>
   
-  <target name="clean" depends="clean.module.unityandroidstore" description="cleanup all"/>
+  <target name="clean" depends="clean.module.unityandroidlevelup" description="cleanup all"/>
   
-  <target name="build.modules" depends="init, clean, compile.module.unityandroidstore" description="build all modules"/>
+  <target name="build.modules" depends="init, clean, compile.module.unityandroidlevelup" description="build all modules"/>
   
   <target name="init.artifacts">
     <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
-    <property name="artifact.output.unityandroidstore:jar" value="${basedir}/out/artifacts/UnityAndroidStore_jar"/>
+    <property name="artifact.output.unityandroidlevelup:jar" value="${basedir}/out/artifacts/UnityAndroidLevelUp_jar"/>
     <mkdir dir="${artifacts.temp.dir}"/>
-    <property name="temp.jar.path.UnityAndroidStore.jar" value="${artifacts.temp.dir}/${soomla.filename}.jar"/>
+    <property name="temp.jar.path.UnityAndroidLevelUp.jar" value="${artifacts.temp.dir}/${soomla.filename}.jar"/>
   </target>
   
-  <target name="artifact.unityandroidstore:jar" depends="init.artifacts, compile.module.unityandroidstore" description="Build &#39;UnityAndroidStore:jar&#39; artifact">
-    <property name="artifact.temp.output.unityandroidstore:jar" value="${artifacts.temp.dir}/UnityAndroidStore_jar"/>
-    <mkdir dir="${artifact.temp.output.unityandroidstore:jar}"/>
-    <jar destfile="${temp.jar.path.UnityAndroidStore.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
-      <zipfileset dir="${unityandroidstore.output.dir}"/>
+  <target name="artifact.unityandroidlevelup:jar" depends="init.artifacts, compile.module.unityandroidlevelup" description="Build &#39;UnityAndroidLevelUp:jar&#39; artifact">
+    <property name="artifact.temp.output.unityandroidlevelup:jar" value="${artifacts.temp.dir}/UnityAndroidLevelUp_jar"/>
+    <mkdir dir="${artifact.temp.output.unityandroidlevelup:jar}"/>
+    <jar destfile="${temp.jar.path.UnityAndroidLevelUp.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${unityandroidlevelup.output.dir}"/>
     </jar>
-    <copy file="${temp.jar.path.UnityAndroidStore.jar}" tofile="${basedir}/${unityandroidstore.target.dir}/${soomla.filename}.jar"/>
+    <copy file="${temp.jar.path.UnityAndroidLevelUp.jar}" tofile="${basedir}/${unityandroidlevelup.target.dir}/${soomla.filename}.jar"/>
   </target>
   
-  <target name="build.all.artifacts" depends="artifact.unityandroidstore:jar" description="Build all artifacts">
-    <mkdir dir="${artifact.output.unityandroidstore:jar}"/>
-    <copy todir="${artifact.output.unityandroidstore:jar}">
-      <fileset dir="${artifact.temp.output.unityandroidstore:jar}"/>
+  <target name="build.all.artifacts" depends="artifact.unityandroidlevelup:jar" description="Build all artifacts">
+    <mkdir dir="${artifact.output.unityandroidlevelup:jar}"/>
+    <copy todir="${artifact.output.unityandroidlevelup:jar}">
+      <fileset dir="${artifact.temp.output.unityandroidlevelup:jar}"/>
     </copy>
     
     <!-- Delete temporary files -->

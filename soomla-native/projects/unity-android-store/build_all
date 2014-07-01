@@ -1,1 +1,1 @@
-ant -buildfile unity-android-store.xml -Dsoomla.filename="UnityAndroidStore" all
+ant -buildfile unity-android-levelup.xml -Dsoomla.filename="UnityAndroidLevelup" all
