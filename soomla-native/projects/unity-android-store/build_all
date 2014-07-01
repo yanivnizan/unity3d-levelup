@@ -1,0 +1,1 @@
+ant -buildfile unity-android-store.xml -Dsoomla.filename="UnityAndroidStore" all

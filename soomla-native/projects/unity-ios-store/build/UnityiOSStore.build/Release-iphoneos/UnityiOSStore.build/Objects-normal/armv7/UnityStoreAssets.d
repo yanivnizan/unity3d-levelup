@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/refaelos/work/soomla/unity3d-store/soomla-native/projects/unity-ios-store/SoomlaUnity/UnityStoreAssets.mm \
+  /Users/refaelos/work/soomla/unity3d-store/soomla-native/projects/unity-ios-store/SoomlaUnity/UnityStoreAssets.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/IStoreAssets.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/data/StoreJSONConsts.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualCurrencies/VirtualCurrencyPack.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/PurchasableVirtualItem.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/VirtualItem.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualCurrencies/VirtualCurrency.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualGoods/VirtualGood.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/VirtualCategory.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/NonConsumableItem.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualGoods/SingleUseVG.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualGoods/LifetimeVG.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualGoods/EquippableVG.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualGoods/SingleUsePackVG.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/domain/virtualGoods/UpgradeVG.h \
+  ../../../submodules/ios-store/submodules/soomla-ios-core/SoomlaiOSCore/SoomlaUtils.h \
+  ../../../submodules/ios-store/SoomlaiOSStore/data/StoreInfo.h
