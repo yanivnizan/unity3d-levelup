@@ -1,6 +1,0 @@
-
-rm -rf build
-
-xcodebuild -configuration Release -sdk iphoneos7.1 -project UnityiOSStore.xcodeproj -target UnityiOSStore clean build CREATING_UNIVERSAL_DIR=$PWD/build/release
-
-cp build/release/libUnityiOSStore.a ../../../Soomla/Assets/Plugins/iOS/
